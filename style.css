@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #853888, #d87093);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.music-player{
+    background-color: #ffbdc8;
+    padding: 25px 35px;
+    text-align: center;
+    width: 400px;
+    border-radius: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #e600a1;
+    box-shadow: 0 5px 10px #6b6b6b;
+}
+
+.song-img{
+    width: 220px;
+    border-radius: 20%;
+    border: 8px solid white;
+    box-shadow: 0 10px 60px #fb8bff;
+}
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #333;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(255, 135, 155) ;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: pink;
+    border-radius: 50%;
+    border: 8px solid white;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 5px 5px palevioletred;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: palevioletred;
+    box-shadow: 0 10px 20px rgb(85, 85, 85);
+    cursor: pointer;
+}
+
+
+.controls div:nth-child(2){
+    transform: scale(1.2);
+    background-color: #d87093;
+    color: white;
+}   
+
+
+@media screen and (width < 480px){
+    .container{
+        background: #ffbdc8;
+    }
+}
