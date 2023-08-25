@@ -74,7 +74,7 @@ nav .circle{
 #progress::-webkit-slider-thumb{
     -webkit-appearance: none;
     background-color: rgb(255 87 115);
-    border-radius: 30%;
+    border-radius: 50%;
     border: 8px solid white;
     width: 30px;
     height: 30px;
